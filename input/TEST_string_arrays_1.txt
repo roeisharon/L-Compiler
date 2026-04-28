@@ -1,0 +1,12 @@
+array strArray = string[];
+
+void main() {
+    strArray a := new string[3];
+    a[0] := "foo";
+    a[1] := "moo";
+    a[2] := "soo";
+
+    PrintString(a[0]);
+    PrintString(a[1]);
+    PrintString(a[2]);
+}

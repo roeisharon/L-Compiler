@@ -1,0 +1,15 @@
+array IntArr = int[];
+array Matrix = IntArr[];
+
+class A {
+    Matrix mat;
+    void init() {
+        mat := new IntArr[5];
+        mat[6] := nil;
+    }
+}
+
+void main() {
+    A a := new A;
+    a.init();
+}

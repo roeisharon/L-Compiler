@@ -1,0 +1,12 @@
+array strArray1 = string[];
+array strArray2 = string[];
+
+void main() {
+    strArray1 a1 := new string[1];
+    strArray2 a2 := new string[1];
+
+    a1[0] := "test";
+    a2[0] := "test";
+
+    PrintInt(a1[0] = a2[0]);
+}

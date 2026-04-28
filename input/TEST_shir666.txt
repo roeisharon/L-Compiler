@@ -1,0 +1,11 @@
+string ssssss := "";
+string coco := "ko";
+string lolo := "po";
+
+void main() {
+	int i := 7+2+1-2*6;
+	PrintString(coco+ssssss+ssssss+lolo+lolo+ssssss);
+	PrintInt(i);
+	i := i * (i +i);
+	PrintInt(i);
+}

@@ -1,0 +1,7 @@
+array IntArray = int[];
+
+class Classy { IntArray a; }
+void main() {
+    Classy a := new Classy;
+    PrintInt(a.a[0]);
+}

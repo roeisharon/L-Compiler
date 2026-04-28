@@ -1,0 +1,14 @@
+int i;
+int inc() {
+    i := i + 1;
+    return i;
+}
+
+void printAll (int a, int b, int c, int d) {
+    PrintInt(a); PrintInt(b); PrintInt(c); PrintInt(d);
+}
+
+void main() {
+    i := 0;
+    printAll(inc(), inc(), inc(), inc() + 3);
+}

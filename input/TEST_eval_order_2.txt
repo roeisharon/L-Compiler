@@ -1,0 +1,10 @@
+int i := 1;
+int inc() {i := i + 1; return i;}
+void main() {
+    int j := inc() + inc() * inc();  // 2 + 3 * 4
+    PrintInt(j);
+    j := inc() + inc() + inc(); // 5 + 6 + 7
+    PrintInt(j);
+    PrintInt(i);
+
+}

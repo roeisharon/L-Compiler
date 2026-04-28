@@ -1,0 +1,42 @@
+string s := "global";
+
+class A {
+    string s := "cfield";
+    void foo() {
+        PrintString(s);
+    }
+}
+
+void foo(string s) {
+    PrintString(s);
+    s := "garbage";
+}
+
+void bar() {
+    PrintString(s);
+    s := "changedGlobal";
+}
+
+void main() {
+    A a := new A;
+    PrintString(s);
+    a.foo();
+    if (1) {
+        PrintString(s);
+        string s := "innerScope";
+        PrintString(s);
+        foo("arg");
+        foo(s);
+    }
+    foo(s);
+    PrintString(s);
+    PrintString(a.s);
+    string s := "moving";
+    a.s := s;
+    a.foo();
+    bar();
+    bar();
+    PrintString(s);
+
+    //global cfield global innerScope arg innerScope global global cfield moving global changedGlobal moving
+}

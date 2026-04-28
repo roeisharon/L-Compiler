@@ -1,0 +1,6 @@
+array IntArray = int[];
+void main() {
+    IntArray a1 := nil;
+    IntArray a2 := a1;
+    PrintInt(a1 = a2);
+}

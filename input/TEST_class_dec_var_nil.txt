@@ -1,0 +1,7 @@
+class A {
+	A i := nil;
+}
+void main() {
+    A a := new A;
+    PrintInt(a.i = nil);
+}

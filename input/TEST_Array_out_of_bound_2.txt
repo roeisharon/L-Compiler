@@ -1,0 +1,9 @@
+array IntArr = int[];
+
+void main() {
+    IntArr arr := new int[4];
+    arr[0] := 5;
+    if(arr[-1] = 0 + 2) {
+        return;
+    }
+}

@@ -1,0 +1,5 @@
+class Father { int i; int j; } Father f := nil;
+void main() {
+	int i := f.i;
+	PrintString("shouldntGetHere");
+}

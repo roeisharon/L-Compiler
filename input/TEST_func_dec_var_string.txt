@@ -1,0 +1,8 @@
+void f() {
+	string i := "abcde";
+	PrintString(i);
+}
+
+void main() {
+	f();
+}

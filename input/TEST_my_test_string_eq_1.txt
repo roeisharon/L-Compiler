@@ -1,0 +1,16 @@
+void main() {
+    string s1 := "foo";
+    string s2 := "odfoo";
+
+    PrintInt(s1 = s2);
+    if(s1 = s2) {PrintString("NOTLEGIT");}
+    if((s1 + s2) = "fooodfoo") {PrintString("legiti");}
+    if(s1 = "foo")   {PrintString("legito");}
+    if(s2 = "odmatap") {PrintString("NOTLEGIT");}
+    if(s2 = "odmata")  {PrintString("NOTLEGIT");}
+    if(s2 = "dfoo")  {PrintString("NOTLEGIT");}
+    if(s2 = "adfoo")  {PrintString("NOTLEGIT");}
+
+    PrintString(s1 + s2 + s1);
+
+}

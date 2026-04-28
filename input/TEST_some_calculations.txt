@@ -1,0 +1,22 @@
+void main() {
+	int i := 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1 + 1; 
+
+	PrintInt(i); 
+
+	if((i * 2) = 60) {
+		PrintString("ONE");
+	}
+	if((i / 2) = 15) {
+		PrintString("TWO");
+	}
+
+	int c;
+	c := 1 * 2 + 3;
+	PrintInt(c);
+
+	c := 6 - (4 + 2) / 6;
+	PrintInt(c);
+
+	c := (6 - 4 + 2) / 6;
+    PrintInt(c);
+}

@@ -1,0 +1,25 @@
+string foo(int i) {
+	if(i = 1) {return "One";}
+	if(i = 2) {return "Two";}
+	if(i = 3) {return "Tres";}
+	if ("hello" = "goodbye") {return "Paul";}
+	if (("hello" = "goodbye") - i) {return "George";}
+	return "Default";
+}
+
+void main() {
+    string s;
+
+    s := foo(1);
+    PrintString(s);
+
+    s := foo(0);
+    PrintString(s);
+
+    s := foo(-1);
+    PrintString(s);
+
+    s := foo(101);
+    PrintString(s);
+
+}

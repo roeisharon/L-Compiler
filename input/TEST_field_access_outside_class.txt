@@ -1,0 +1,13 @@
+string coco := "coooo";
+class A {
+	int coco;
+	void print() {
+			PrintInt(coco);
+	}
+}
+
+void main() {
+	A a := new A;
+	a.coco := 34;
+	a.print();
+}

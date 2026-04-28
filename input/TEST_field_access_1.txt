@@ -1,0 +1,15 @@
+class A {
+	int i := 5;
+}
+
+class B extends A {
+	void f() {
+        i := 2;
+		PrintInt(i);
+	}
+}
+
+void main() {
+	B b := new B;
+	b.f();
+}

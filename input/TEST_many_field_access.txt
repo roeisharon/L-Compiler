@@ -1,0 +1,22 @@
+array IntArr = int[];
+
+class A { 
+	IntArr arr := nil;
+	string s := "inA";
+	void init() {arr := new int[3]; arr[1] := 8907;}
+}
+class B { A a := nil; string s:= "inB"; void init() {a := new A; a.init();} }
+class C { B b := nil; void init() {b := new B; b.init();} }
+class D { C c := nil; void init() {c := new C; c.init();} }
+
+void main() {
+	D d := new D;
+	B b := new B;
+	d.init(); b.init();
+	int i := d.c.b.a.arr[1] + 3;
+	PrintInt(i);
+	b.s := "anotherInB";
+	PrintString(d.c.b.s);
+	PrintString(b.s);
+	PrintString(b.a.s);
+}

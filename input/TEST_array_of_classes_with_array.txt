@@ -1,0 +1,32 @@
+array IntArr = int[];
+class A {
+	IntArr arr;
+	void init(int num) {arr := new int[1]; arr[0] := num;}
+}
+array AArray = A[];
+
+void main() {
+	AArray arr := new A[3];
+	arr[0] := new A;
+	arr[0].init(123);
+	arr[2] := new A;
+	arr[2].init(456);
+
+	PrintInt(arr[0].arr[0]);
+	PrintInt(arr[2].arr[0]);
+
+	PrintInt(arr[0] = arr[2]);
+	PrintInt(arr[0].arr = arr[2].arr);
+
+	IntArr pointer := arr[0].arr; 
+	pointer[0] := 789;
+	PrintInt(arr[0].arr[0]);
+
+	A pointerToA := arr[2];
+	PrintInt(pointerToA.arr[0]);
+	pointerToA.arr := pointer;
+	pointerToA.arr[0] := 159;
+
+	PrintInt(arr[0].arr[0]);
+	PrintInt(arr[2].arr[0]);
+}

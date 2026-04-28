@@ -1,0 +1,15 @@
+string s := "global";
+
+class A {
+	void printVarS() {
+		PrintString(s);
+	}
+	string s := "cfield";
+}
+
+void main() {
+	A a := new A;
+	a.printVarS(); // ?
+	PrintString(a.s);
+	PrintString(s);
+}

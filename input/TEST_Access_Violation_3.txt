@@ -1,0 +1,5 @@
+array IntArray = int[]; 
+void main() {
+	IntArray A := new int[6]; 
+	A[-1] := 89;
+}

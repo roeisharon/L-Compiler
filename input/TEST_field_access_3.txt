@@ -1,0 +1,22 @@
+class A {
+	int i := 5;
+	void f() {
+		PrintInt(i);
+	}
+}
+
+class B extends A {
+	void f() {
+		PrintInt(i);
+		i := 11112;
+		PrintInt(i);
+	}
+}
+
+void main() {
+	A b := new B;
+	b.f();
+
+	A a := new A;
+	a.f();
+}

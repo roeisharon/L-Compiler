@@ -1,0 +1,25 @@
+array IntArr = int[];
+array Matrix = IntArr[];
+int i := 0;
+
+int inc() {
+    i := i + 1;
+    return i;
+}
+
+class A {
+    Matrix mat;
+    void init() {
+        mat := new IntArr[5];
+        mat[3] := new int[8];
+        mat[3][4] := 555;
+    }
+}
+
+void main() {
+    A a := new A;
+    a.init();
+    inc(); inc();
+    int res := a.mat[inc()][inc()];
+    PrintInt(res);
+}

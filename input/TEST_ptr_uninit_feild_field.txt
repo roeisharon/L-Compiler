@@ -1,0 +1,11 @@
+class A {
+	A a;
+	int i;
+	void f() {
+		return;
+	}
+}
+void main() {
+	A a := new A;
+	a.a.i := 2;
+}

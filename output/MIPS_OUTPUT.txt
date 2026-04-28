@@ -1,0 +1,1 @@
+SPIM execution timed out/failed (possible infinite loop in generated MIPS).

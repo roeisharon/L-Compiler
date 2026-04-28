@@ -1,0 +1,8 @@
+void f() {
+	int i := 4500;
+	PrintInt(i);
+}
+
+void main() {
+	f();
+}

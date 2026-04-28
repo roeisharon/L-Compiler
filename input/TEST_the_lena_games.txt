@@ -1,0 +1,55 @@
+class A {
+	void foo() {
+		PrintString("fooA");
+	}
+
+ 	void bar(A a) {
+ 		a.foo();
+ 		foo();
+ 	}
+
+ 	void moreFoo() {
+ 		PrintString("moreFooA");
+ 	}
+}
+
+class B extends A {
+	void foo() {
+		PrintString("fooB");
+	}
+}
+
+class C extends A {
+	void moreFoo() {
+		PrintString("moreFooC");
+	}
+}
+
+class D extends B {
+    int dummy := 3;
+}
+
+void foo() {PrintString("wrongFoo");}
+
+void main() {
+	A a := new A;
+	B b := new B;
+	a.bar(b);
+	PrintString("P");
+	b.bar(a);
+	PrintString("P");
+	C c := new C;
+	a.bar(c);
+	PrintString("P");
+	c.bar(b);
+	PrintString("P");
+	c.moreFoo();
+
+	A castedC := c;
+	c.moreFoo();
+
+    PrintString("P");
+    A d := new D;
+    a.bar(d);
+    d.bar(a);
+}

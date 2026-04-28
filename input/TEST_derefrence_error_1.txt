@@ -1,0 +1,12 @@
+array IntArr = int[];
+array Matrix = IntArr[];
+
+class A {
+    Matrix mat;
+}
+
+void main() {
+    A a := new A;
+    a.mat[2][3] := 3;
+    PrintString("shouldnt");
+}

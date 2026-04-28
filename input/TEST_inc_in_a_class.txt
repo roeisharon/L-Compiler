@@ -1,0 +1,28 @@
+class A {
+    int i := 0;
+    void inc() {i := i + 1;}
+    void bar() {
+        inc();
+        PrintInt(i);
+    }
+}
+
+void main() {
+    A a := new A;
+    PrintInt(a.i);
+    a.inc();
+
+    A b := new A;
+    b.inc();
+
+    PrintInt(a.i);
+    a.bar();
+    PrintInt(a.i);
+    PrintInt(b.i);
+
+    b.i := -1;
+    PrintInt(b.i);
+    PrintInt(a.i);
+    a.bar();
+    b.bar();
+}

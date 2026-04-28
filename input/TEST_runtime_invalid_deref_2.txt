@@ -1,0 +1,5 @@
+class Classy { int a; }
+void main() {
+    Classy a := nil;
+    PrintInt(a.a);
+}

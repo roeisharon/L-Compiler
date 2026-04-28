@@ -1,0 +1,13 @@
+int foo(int j) {
+	return 8 / j;
+}
+void main() {
+	int i;
+	i := 9;
+	if(8) {
+		i := 0;
+	}
+	PrintInt(foo(i));
+	PrintString("shouldntGetHere");
+
+}

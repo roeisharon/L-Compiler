@@ -1,0 +1,14 @@
+int counter := 0;
+class A {
+	void inc() {counter := counter + 1;}
+}
+
+void main() {
+    A a := new A;
+	a.inc();
+    a := new A;
+	a.inc();
+    a := new A;
+	a.inc();
+	PrintInt(counter);
+}

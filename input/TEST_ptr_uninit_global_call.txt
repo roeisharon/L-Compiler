@@ -1,0 +1,10 @@
+class A {
+	int i;
+	void f() {
+		return;
+	}
+}
+A a;
+void main() {
+	a.f();
+}

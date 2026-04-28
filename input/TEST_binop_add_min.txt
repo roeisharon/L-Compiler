@@ -1,0 +1,6 @@
+void main() {
+    int a := -32767;
+    int b := -10;
+    int c := a + b;
+    PrintInt(c);
+}
